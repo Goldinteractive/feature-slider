@@ -1,0 +1,28 @@
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 60px;
+  font-size: 16px;
+  line-height: 1.4;
+  background-color: white;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  text-align: center;
+  margin: 20px 70px;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+@import 'gi-feature-object-fit/src/style';
+
+@import '../src/style';
