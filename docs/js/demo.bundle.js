@@ -9084,14 +9084,14 @@ return Unidragger;
     contain: true
   });
 
-  base.features.add('cover-gallery-slider', _src2.default, {
+  base.features.add('cover-slider', _src2.default, {
     contain: true,
     cellAlign: 'left',
     pageDots: false,
     freeScroll: true
   });
 
-  base.features.add('fs-cover-gallery-slider', _src2.default, {
+  base.features.add('fs-cover-slider', _src2.default, {
     contain: true
   });
 

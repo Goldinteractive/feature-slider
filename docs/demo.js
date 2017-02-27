@@ -22,14 +22,14 @@ base.features.add('fs-gallery-slider', Slider, {
   contain: true
 })
 
-base.features.add('cover-gallery-slider', Slider, {
+base.features.add('cover-slider', Slider, {
   contain: true,
   cellAlign: 'left',
   pageDots: false,
   freeScroll: true
 })
 
-base.features.add('fs-cover-gallery-slider', Slider, {
+base.features.add('fs-cover-slider', Slider, {
   contain: true
 })
 
