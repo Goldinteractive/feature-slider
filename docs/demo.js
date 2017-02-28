@@ -17,7 +17,7 @@ base.features.add('gallery-slider', Slider, {
   freeScroll: true
 })
 
-base.features.add('fs-gallery-slider', Slider, {
+base.features.add('fw-gallery-slider', Slider, {
   imagesLoaded: true,
   contain: true
 })
@@ -29,7 +29,7 @@ base.features.add('cover-slider', Slider, {
   freeScroll: true
 })
 
-base.features.add('fs-cover-slider', Slider, {
+base.features.add('fw-cover-slider', Slider, {
   contain: true
 })
 
