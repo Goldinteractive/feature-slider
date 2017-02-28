@@ -112,18 +112,18 @@ h2 {
 .ft-slider.-cover.-ratio .slide {
   height: 0;
   padding-bottom: 55.0%; }
-.ft-slider.-fullscreen .slide {
+.ft-slider.-fullwidth .slide {
   width: 100%; }
   @media screen and (max-width: 1200px) {
-    .ft-slider.-fullscreen .slide {
+    .ft-slider.-fullwidth .slide {
       width: 100%; } }
   @media screen and (max-width: 800px) {
-    .ft-slider.-fullscreen .slide {
+    .ft-slider.-fullwidth .slide {
       width: 100%; } }
   @media screen and (max-width: 650px) {
-    .ft-slider.-fullscreen .slide {
+    .ft-slider.-fullwidth .slide {
       width: 100%; } }
-.ft-slider.-fullscreen:not(.-cover) .slide {
+.ft-slider.-fullwidth:not(.-cover) .slide {
   height: initial; }
 
 /*# sourceMappingURL=demo.scss.css.map */

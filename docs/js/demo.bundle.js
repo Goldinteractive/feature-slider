@@ -9079,7 +9079,7 @@ return Unidragger;
     freeScroll: true
   });
 
-  base.features.add('fs-gallery-slider', _src2.default, {
+  base.features.add('fw-gallery-slider', _src2.default, {
     imagesLoaded: true,
     contain: true
   });
@@ -9091,7 +9091,7 @@ return Unidragger;
     freeScroll: true
   });
 
-  base.features.add('fs-cover-slider', _src2.default, {
+  base.features.add('fw-cover-slider', _src2.default, {
     contain: true
   });
 
