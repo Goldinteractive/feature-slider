@@ -1,6 +1,6 @@
 {
   "name": "gi-feature-slider",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Slider feature for carousel functionality using flickity.",
   "main": "lib/slider.js",
   "jsnext:main": "src/index.js",

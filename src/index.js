@@ -8,6 +8,13 @@ class Slider extends base.features.Feature {
   init() {
     this.node.classList.add('-hidden')
 
+    this.slides = this.$$(this.options.cellSelector)
+
+    if (this.options.hidePageDotsWhenJustOneSlide && this.slides.length <= 1) {
+      this.options.pageDots = false
+      this.options.draggable = false
+    }
+
     window.setTimeout(() => {
       // fade in for no FOUC
       this.node.classList.remove('-hidden')
@@ -35,7 +42,8 @@ class Slider extends base.features.Feature {
  * @see http://flickity.metafizzy.co/
  */
 Slider.defaultOptions = {
-  cellSelector: '.slide'
+  cellSelector: '.slide',
+  hidePageDotsWhenJustOneSlide: true
 }
 
 export default Slider

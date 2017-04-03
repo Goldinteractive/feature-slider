@@ -5711,6 +5711,13 @@ return Unipointer;
 
         this.node.classList.add('-hidden');
 
+        this.slides = this.$$(this.options.cellSelector);
+
+        if (this.options.hidePageDotsWhenJustOneSlide && this.slides.length <= 1) {
+          this.options.pageDots = false;
+          this.options.draggable = false;
+        }
+
         window.setTimeout(function () {
           // fade in for no FOUC
           _this2.node.classList.remove('-hidden');
@@ -5741,7 +5748,8 @@ return Unipointer;
    * @see http://flickity.metafizzy.co/
    */
   Slider.defaultOptions = {
-    cellSelector: '.slide'
+    cellSelector: '.slide',
+    hidePageDotsWhenJustOneSlide: true
   };
 
   exports.default = Slider;
