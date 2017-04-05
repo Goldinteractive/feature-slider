@@ -1648,7 +1648,7 @@ etag@^1.7.0, etag@~1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.7.0.tgz#03d30b5f67dd6e632d2945d30d6652731a34d5d8"
 
-ev-emitter@^1.0.2, ev-emitter@~1.0.1:
+ev-emitter@^1.0.2, ev-emitter@~1.0.0, ev-emitter@~1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/ev-emitter/-/ev-emitter-1.0.3.tgz#ee5ef74b6ed28d911b32ddcbfc97867f580937bc"
 
@@ -1788,7 +1788,14 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
-flickity@^2.0.5:
+flickity-imagesloaded@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/flickity-imagesloaded/-/flickity-imagesloaded-2.0.0.tgz#a2d1d6aae6c26369ef2fa44f3eb948ea474e976b"
+  dependencies:
+    flickity "^2.0.0"
+    imagesloaded "^4.1.0"
+
+flickity@^2.0.0, flickity@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/flickity/-/flickity-2.0.5.tgz#e338c1b9a66a9c9a5e6948f9dfa48501b4603b6d"
   dependencies:
@@ -2120,6 +2127,12 @@ ieee754@^1.1.4:
 ignore@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.2.0.tgz#8d88f03c3002a0ac52114db25d2c673b0bf1e435"
+
+imagesloaded@^4.1.0:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/imagesloaded/-/imagesloaded-4.1.1.tgz#53b5b66615360850a5a264b1293e7f4d06d3bd51"
+  dependencies:
+    ev-emitter "~1.0.0"
 
 immutable@3.8.1, immutable@^3.7.6:
   version "3.8.1"
@@ -2885,9 +2898,9 @@ object-fit-images@^3.1.0:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/object-fit-images/-/object-fit-images-3.1.3.tgz#383946ef2fed1fdb2737fce761938c71056026ee"
 
-"object-fit-videos@git+https://github.com/oncode/object-fit-videos.git":
+"object-fit-videos@https://github.com/oncode/object-fit-videos.git":
   version "1.0.2"
-  resolved "git+https://github.com/oncode/object-fit-videos.git#1212828cdea444a994562d8cc3e47f2f391a21fe"
+  resolved "https://github.com/oncode/object-fit-videos.git#1212828cdea444a994562d8cc3e47f2f391a21fe"
 
 object-path@^0.9.0:
   version "0.9.2"

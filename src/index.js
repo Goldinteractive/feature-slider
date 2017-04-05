@@ -1,4 +1,5 @@
 import Flickity from 'flickity'
+import 'flickity-imagesloaded'
 
 /**
  * Slider feature class.
