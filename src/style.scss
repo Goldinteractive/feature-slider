@@ -43,6 +43,7 @@ $ft-slider-cover-ratio: 0.55 !default;
 
   .slide {
     width: 100%;
+    max-width: initial;
   }
 
   &.-gallery {
