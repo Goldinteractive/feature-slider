@@ -71,7 +71,8 @@ h2 {
   position: relative;
   bottom: 0; }
 .ft-slider .slide {
-  width: 100%; }
+  width: 100%;
+  max-width: initial; }
 .ft-slider.-gallery {
   background: #eee; }
   .ft-slider.-gallery .slide {
@@ -111,7 +112,7 @@ h2 {
   bottom: 25px; }
 .ft-slider.-cover.-ratio .slide {
   height: 0;
-  padding-bottom: 55.0%; }
+  padding-bottom: 55%; }
 .ft-slider.-fullwidth .slide {
   width: 100%; }
   @media screen and (max-width: 1200px) {

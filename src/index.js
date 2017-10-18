@@ -11,7 +11,8 @@ class Slider extends base.features.Feature {
 
     this.slides = this.$$(this.options.cellSelector)
 
-    if (this.options.hidePageDotsWhenJustOneSlide && this.slides.length <= 1) {
+    if (this.options.hideNavElementsWhenJustOneSlide && this.slides.length <= 1) {
+      this.options.prevNextButtons = false
       this.options.pageDots = false
       this.options.draggable = false
     }
@@ -44,7 +45,7 @@ class Slider extends base.features.Feature {
  */
 Slider.defaultOptions = {
   cellSelector: '.slide',
-  hidePageDotsWhenJustOneSlide: true
+  hideNavElementsWhenJustOneSlide: true
 }
 
 export default Slider

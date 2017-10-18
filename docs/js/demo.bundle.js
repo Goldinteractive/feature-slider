@@ -5764,7 +5764,8 @@ return Unipointer;
 
         this.slides = this.$$(this.options.cellSelector);
 
-        if (this.options.hidePageDotsWhenJustOneSlide && this.slides.length <= 1) {
+        if (this.options.hideNavElementsWhenJustOneSlide && this.slides.length <= 1) {
+          this.options.prevNextButtons = false;
           this.options.pageDots = false;
           this.options.draggable = false;
         }
@@ -5800,7 +5801,7 @@ return Unipointer;
    */
   Slider.defaultOptions = {
     cellSelector: '.slide',
-    hidePageDotsWhenJustOneSlide: true
+    hideNavElementsWhenJustOneSlide: true
   };
 
   exports.default = Slider;
