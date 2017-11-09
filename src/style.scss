@@ -26,6 +26,8 @@ $ft-slider-cover-ratio: 0.55 !default;
   & {
     opacity: 0;
     transition: opacity $ft-slider-transition-opacity-time;
+    transform: translate3d(0,0,0);
+    backface-visibility: hidden;
   }
 
   &.-hidden {
