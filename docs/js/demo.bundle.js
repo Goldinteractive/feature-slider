@@ -5778,6 +5778,12 @@ return Unipointer;
 
           _this2.flickity = new _flickity2.default(_this2.node, _this2.options);
 
+          _this2.options.listeners.forEach(function (listener) {
+            _this2.flickity.on(listener.event, function () {
+              listener.handler(_this2.flickity);
+            });
+          });
+
           // execute initial resize/reposition to make slides fit
           _this2.flickity.resize();
           _this2.flickity.reposition();
@@ -5797,11 +5803,18 @@ return Unipointer;
   /**
    * Default feature options (also used to initialize flickity library).
    *
+   * listeners: [
+   *   {
+   *     event: 'eventName',
+   *     handler: function() {}
+   *   }
+   * ]
    * @see http://flickity.metafizzy.co/
    */
   Slider.defaultOptions = {
     cellSelector: '.slide',
-    hideNavElementsWhenJustOneSlide: true
+    hideNavElementsWhenJustOneSlide: true,
+    listeners: []
   };
 
   exports.default = Slider;
@@ -9549,6 +9562,21 @@ return Unidragger;
 
   base.features.add('fw-cover-slider', _src2.default, {
     contain: true
+  });
+
+  base.features.add('event-slider', _src2.default, {
+    contain: true,
+    listeners: [{
+      event: 'select',
+      handler: function handler(flickity) {
+        console.log('selected', flickity);
+      }
+    }, {
+      event: 'settle',
+      handler: function handler(flickity) {
+        console.log('settled', flickity);
+      }
+    }]
   });
 
   base.features.init();

@@ -25,6 +25,12 @@ class Slider extends base.features.Feature {
 
       this.flickity = new Flickity(this.node, this.options)
 
+      this.options.listeners.forEach(listener => {
+        this.flickity.on(listener.event, () => {
+          listener.handler(this.flickity)
+        })
+      })
+
       // execute initial resize/reposition to make slides fit
       this.flickity.resize()
       this.flickity.reposition()
@@ -41,11 +47,20 @@ class Slider extends base.features.Feature {
 /**
  * Default feature options (also used to initialize flickity library).
  *
+ * listeners: [
+ *   {
+ *     event: 'eventName',
+ *     handler: function() {}
+ *   }
+ * ]
  * @see http://flickity.metafizzy.co/
  */
 Slider.defaultOptions = {
   cellSelector: '.slide',
-  hideNavElementsWhenJustOneSlide: true
+  hideNavElementsWhenJustOneSlide: true,
+  listeners: [
+
+  ]
 }
 
 export default Slider

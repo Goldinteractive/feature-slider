@@ -62,7 +62,9 @@ h2 {
 
 .ft-slider {
   opacity: 0;
-  transition: opacity 0.4s; }
+  transition: opacity 0.4s;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden; }
 .ft-slider.-hidden {
   display: none; }
 .ft-slider.flickity-enabled {

@@ -33,4 +33,22 @@ base.features.add('fw-cover-slider', Slider, {
   contain: true
 })
 
+base.features.add('event-slider', Slider, {
+  contain: true,
+  listeners: [
+    {
+      event: 'select',
+      handler: (flickity) => {
+        console.log('selected', flickity)
+      }
+    },
+    {
+      event: 'settle',
+      handler: (flickity) => {
+        console.log('settled', flickity)
+      }
+    }
+  ]
+})
+
 base.features.init()
